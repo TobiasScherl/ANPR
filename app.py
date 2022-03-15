@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 from skimage.io import imread
 from skimage.transform import resize
 import efficientnet.keras as efn
-from datetime import datetime
 
 model = keras.models.load_model(
     "efnB0_V1.h5", compile=False)

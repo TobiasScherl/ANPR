@@ -5,6 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from skimage.io import imread
 from skimage.transform import resize
+
+!pip install git+https://github.com/qubvel/segmentation_models
 import efficientnet.keras as efn
 
 model = keras.models.load_model(

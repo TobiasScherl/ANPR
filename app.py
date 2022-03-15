@@ -1,7 +1,5 @@
 from flask import Flask, render_template, request
-import tensorflow as tf
 import keras
-from gevent.pywsgi import WSGIServer
 from keras.preprocessing import image
 import numpy as np
 import matplotlib.pyplot as plt

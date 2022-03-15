@@ -1,1 +1,1 @@
-web: gunicorn ANPR_FlasApp:app
+web: gunicorn app:app

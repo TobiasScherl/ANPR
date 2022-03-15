@@ -8,4 +8,4 @@ numpy>=1.9.2
 matplotlib>=1.4.3
 keras==2.8.0
 tensorflow-cpu==2.8.0
-skimage>=0.18.1
+skimage>=0.16.1

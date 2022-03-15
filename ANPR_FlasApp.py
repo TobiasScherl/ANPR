@@ -27,13 +27,6 @@ def predictLicensePlate(licenseplate):
     characters = '0123456789ABCDEFGHIJKLMNPQRSTUVWXYZ'
     return "".join(np.array(list(characters))[np.argmax(classes, axis=2).astype(int)].flat)
     
-#licenseplate = r'C:\Users\tobis\Downloads\WPy64-3920\notebooks\2_4.png'
-
-#predictLicensePlate(licenseplate)
-
-#img = imread(r'C:\Users\tobis\Downloads\WPy64-3920\notebooks\2_4.png')
-#plt.imshow(img)
-
 app = Flask(__name__)
 
 
@@ -58,9 +51,5 @@ def get_output():
 
 	return render_template("index.html", prediction = p, licenseplate = licenseplate)
 
-
-if __name__ =='__main__':
-	app.debug = True
-	app.run(host='localhost',port=4998,debug = True, use_reloader=False)
-    #http_server = WSGIServer(('', 5000), app)
-    #http_server.serve_forever()
+if __name__ == '__main__':
+    app.run_server()

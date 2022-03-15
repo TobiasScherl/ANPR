@@ -11,7 +11,7 @@ import efficientnet.keras as efn
 from datetime import datetime
 
 model = keras.models.load_model(
-    r"C:\Users\tobis\Downloads\WPy64-3920\notebooks\efnB0_V1.h5", compile=False)
+    "efnB0_V1.h5", compile=False)
 
 # dimensions of our images
 img_width, img_height = 224, 224

@@ -9,3 +9,4 @@ matplotlib>=1.4.3
 keras==2.8.0
 tensorflow-cpu==2.8.0
 scikit-image==0.18.1
+git+https://github.com/qubvel/segmentation_models

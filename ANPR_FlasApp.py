@@ -52,4 +52,4 @@ def get_output():
 	return render_template("index.html", prediction = p, licenseplate = licenseplate)
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run(debug=True)
